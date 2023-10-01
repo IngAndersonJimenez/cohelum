@@ -1,3 +1,18 @@
-body {
+body{
     font-family: "Mulish", Sans-serif, serif;
+}
+header{
+
+}
+.nav-menu-container{
+    display: flex;
+    justify-content: center;
+
+}
+.nav-menu{
+    list-style: none;
+}
+li{
+    display: inline;
+    margin: 5px;
 }
