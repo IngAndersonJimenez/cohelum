@@ -1,18 +1,26 @@
-body{
+body {
     font-family: "Mulish", Sans-serif, serif;
 }
-header{
 
-}
-.nav-menu-container{
+header {}
+
+.nav-menu-container {
     display: flex;
     justify-content: center;
 
 }
-.nav-menu{
+
+.nav-menu {
     list-style: none;
 }
-li{
+
+li {
     display: inline;
     margin: 5px;
+}
+
+.container-content {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto;
 }
