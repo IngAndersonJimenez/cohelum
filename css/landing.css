@@ -16,3 +16,53 @@ li{
     display: inline;
     margin: 5px;
 }
+/* Estilo del botón de hamburguesa personalizado */
+.menu-toggle-checkbox {
+    display: none;
+}
+
+.menu-toggle-label {
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+}
+
+.menu-toggle-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+/* Estilo del menú desplegable */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    left: -200px;
+    width: 200px;
+    transition: left 0.4s;
+}
+
+.menu-toggle-checkbox:checked + .menu-toggle-label + .menu {
+    left: 0;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+}
+
+/* Estilo del contenido de la página */
+.content {
+    padding: 20px;
+}
