@@ -1,22 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+  margin-top: 15px;
+}
+.bars__menu{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 90px;
+    cursor: pointer;
+}
+.bars__menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: gray;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+}
+.activeline1__bars-menu{
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activeline2__bars-menu{
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activeline3__bars-menu{
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
 body {
     font-family: "Mulish", Sans-serif, serif;
-}
-
-header {}
-
-.nav-menu-container {
-    display: flex;
-    justify-content: center;
-
-}
-
-.nav-menu {
-    list-style: none;
-}
-
-li {
-    display: inline;
-    margin: 5px;
 }
 
 .container-content {
@@ -24,3 +43,49 @@ li {
     grid-template-columns: 25% 75%;
     grid-template-rows: auto;
 }
+
+/* este CSS para mostrar el menú cuando se active la clase "menu__active" */
+#mainNavbar.menu__active {
+    display: block;
+    position: absolute;
+    top: 55px; /* Ajusta la posición superior */
+    right: 0; /* Coloca el menú en el lado derecho */
+    background-color: white;
+    width: 200px; /* Ajusta el ancho del menú desplegado según tus necesidades */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega sombra al menú */
+}
+#mainNavbar {
+    display: none; /* Inicialmente, oculta el menú */
+    top: 0;
+    left: 0;
+    background-color: white; /* Color de fondo del menú */
+}
+/* Estilo para los elementos del menú en el menú desplegado */
+#mainNavbar.menu__active .navbar-nav-container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos uno encima del otro */
+    align-items: flex-end; /* Alinea los elementos a la derecha */
+    padding: 10px; /* Añade un espacio entre los elementos del menú */
+}
+
+/* Estilo para cada elemento de menú en el menú desplegado */
+#mainNavbar.menu__active .navbar-nav-container .nav-item {
+    margin-bottom: 10px; /* Espacio entre elementos de menú */
+}
+
+/* Estilo para los enlaces en el menú desplegado */
+#mainNavbar.menu__active .navbar-nav-container .nav-link {
+    color: #333; /* Color de texto para los enlaces */
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+
+
+
+
+
+
+
+
+
+
