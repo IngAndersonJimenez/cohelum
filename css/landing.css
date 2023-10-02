@@ -3,14 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
-.navbar{
-  margin-top: 15px;
+#container-header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1080;
 }
+header{
+    display: block;
+    background: transparent;
+    height: 102px;
+}
+
+.container-panel{
+    display: flex;
+    align-items: center;
+}
+.container-header1{
+    padding: 0 15px;
+}
+
 .bars__menu{
     width: 30px;
     height: 30px;
+    margin-left: 10.1%;
     position: absolute;
-    left: 90px;
     cursor: pointer;
 }
 .bars__menu span {
@@ -20,6 +38,7 @@
     background: gray;
     margin-top: 6px;
     transform-origin: 0px 100%;
+    transition: .3s all ease;
 }
 .activeline1__bars-menu{
     transform: rotate(45deg) translate(-2px, 1px);
@@ -47,45 +66,35 @@ body {
 /* este CSS para mostrar el menú cuando se active la clase "menu__active" */
 #mainNavbar.menu__active {
     display: block;
-    position: absolute;
-    top: 55px; /* Ajusta la posición superior */
-    right: 0; /* Coloca el menú en el lado derecho */
-    background-color: white;
-    width: 200px; /* Ajusta el ancho del menú desplegado según tus necesidades */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega sombra al menú */
+    transition: .1s;
+    transform: none;
+
 }
-#mainNavbar {
-    display: none; /* Inicialmente, oculta el menú */
+.nav a{
+    margin-left: 25px;
+    font-size: 12px;
+    line-height: 1.25;
+    font-weight: 700;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    word-break: break-all;
+    color: black;
+}
+.nav a:active {
+    color: #C4956A;
+}
+.navbar-main{
+    position: fixed;
+    align-items: center;
     top: 0;
-    left: 0;
-    background-color: white; /* Color de fondo del menú */
+    left: 26.2%;
+    padding: 44px 50px;
+    background: white;
 }
-/* Estilo para los elementos del menú en el menú desplegado */
-#mainNavbar.menu__active .navbar-nav-container {
-    display: flex;
-    flex-direction: column; /* Coloca los elementos uno encima del otro */
-    align-items: flex-end; /* Alinea los elementos a la derecha */
-    padding: 10px; /* Añade un espacio entre los elementos del menú */
+.hidden{
+    display: none;
 }
-
-/* Estilo para cada elemento de menú en el menú desplegado */
-#mainNavbar.menu__active .navbar-nav-container .nav-item {
-    margin-bottom: 10px; /* Espacio entre elementos de menú */
-}
-
-/* Estilo para los enlaces en el menú desplegado */
-#mainNavbar.menu__active .navbar-nav-container .nav-link {
-    color: #333; /* Color de texto para los enlaces */
-    text-align: right; /* Alinea el texto a la derecha */
-}
-
-
-
-
-
-
-
-
 
 
 
