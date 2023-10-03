@@ -1,36 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#container-header{
+
+#container-header {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1080;
 }
-header{
+
+header {
     display: block;
     background: transparent;
     height: 102px;
 }
 
-.container-panel{
+.container-panel {
     display: flex;
     align-items: center;
 }
-.container-header1{
+
+.container-header1 {
     padding: 0 15px;
 }
 
-.bars__menu{
+.bars__menu {
     width: 30px;
     height: 30px;
     margin-left: 10.1%;
     position: absolute;
     cursor: pointer;
 }
+
 .bars__menu span {
     display: block;
     width: 100%;
@@ -40,16 +44,17 @@ header{
     transform-origin: 0px 100%;
     transition: .3s all ease;
 }
-.activeline1__bars-menu{
+
+.activeline1__bars-menu {
     transform: rotate(45deg) translate(-2px, 1px);
 }
 
-.activeline2__bars-menu{
+.activeline2__bars-menu {
     opacity: 0;
     margin-left: -30px;
 }
 
-.activeline3__bars-menu{
+.activeline3__bars-menu {
     transform: rotate(-45deg) translate(-4px, 2px);
 }
 
@@ -59,8 +64,8 @@ body {
 
 .container-content {
     display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: auto;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 80% 20%;
 }
 
 /* este CSS para mostrar el menú cuando se active la clase "menu__active" */
@@ -70,7 +75,8 @@ body {
     transform: none;
 
 }
-.nav a{
+
+.nav a {
     margin-left: 25px;
     font-size: 12px;
     line-height: 1.25;
@@ -81,10 +87,12 @@ body {
     word-break: break-all;
     color: black;
 }
+
 .nav a:active {
     color: #C4956A;
 }
-.navbar-main{
+
+.navbar-main {
     position: fixed;
     align-items: center;
     top: 0;
@@ -92,8 +100,11 @@ body {
     padding: 44px 50px;
     background: white;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
 
 
+  
+  
